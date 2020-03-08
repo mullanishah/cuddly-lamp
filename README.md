@@ -49,32 +49,32 @@ checkout to them, add files then commit and push
 merge them with origin/develop 
 lastly merge develop into the master.
 -----------------------------------
-step 1:
-	git branch feature/search-feature
+step 1: <br>
+	git branch feature/search-feature <br>
 	git branch feature/login-feature <br>
-step 2.a:
-	git checkout feature/search-feature
-	[file-saved]
-	git add -A
-	git commit -m "Adding search file"
-	git push --set-upstream origin feature/search-feature
-step 2.b:
-	git checkout feature/login-feature
-	git branch --set-upstream-to=origin/develop feature/login-feature 		**mistake
-	git pull origin
-	git branch --set-upstream-to=origin/feature/login-feature feature/login-feature ==> **error: the requested upstream branch 'origin/feature/login-feature' does not exist
-	git push origin HEAD					**resolved mistake, here only branch name pushed so I set it as origin in next step
-	git branch --set-upstream-to=origin/feature/login-feature feature/login-feature
-	[file-saved]
-	git add -A
-	git commit -m "initial login commit"
-	git push origin
-step 3: 
-	[Github]branch: develop, 	base: develop <-- compare: feature/login-feature
-	git checkout develop
-	git pull origin
-step 4:
-	[Github]branch: master, 	base: master  <-- compare: develop,		Create Pull Request, 	Merge pull request
-	git checkout master
-	git pull origin
-
+step 2.a: <br>
+	git checkout feature/search-feature <br>
+	[file-saved] <br>
+	git add -A <br>
+	git commit -m "Adding search file"<br>
+	git push --set-upstream origin feature/search-feature<br>
+step 2.b:<br>
+	git checkout feature/login-feature<br>
+	git branch --set-upstream-to=origin/develop feature/login-feature 		**mistake <br>
+	git pull origin <br>
+	git branch --set-upstream-to=origin/feature/login-feature feature/login-feature ==> **error: the requested upstream branch 'origin/feature/login-feature' does not exist<br>
+	git push origin HEAD					**resolved mistake, here only branch name pushed so I set it as origin in next step<br>
+	git branch --set-upstream-to=origin/feature/login-feature feature/login-feature<br>
+	[file-saved]<br>
+	git add -A<br>
+	git commit -m "initial login commit"<br>
+	git push origin<br>
+step 3: <br>
+	[Github]branch: develop, 	base: develop <-- compare: feature/login-feature<br>
+	git checkout develop<br>
+	git pull origin<br>
+step 4:<br>
+	[Github]branch: master, 	base: master  <-- compare: develop,		Create Pull Request, 	Merge pull request<br>
+	git checkout master<br>
+	git pull origin<br>
+<br>
