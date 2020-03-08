@@ -51,7 +51,7 @@ lastly merge develop into the master.
 -----------------------------------
 step 1:
 	git branch feature/search-feature
-	git branch feature/login-feature
+	git branch feature/login-feature <br>
 step 2.a:
 	git checkout feature/search-feature
 	[file-saved]
